@@ -1,0 +1,15 @@
+import processing.serial.*;
+Serial port;
+
+void setup(){
+size (800,600);
+//port=new Serial (this, "COM", 9600);
+}
+
+void draw (){
+  background (255,100,100);
+  fill (0,0,255);
+  rect (375,150,50,100);
+  fill (0,255,0);
+  ellipse (400,200,20,20);
+  }
