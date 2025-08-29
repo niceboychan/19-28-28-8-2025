@@ -1,0 +1,23 @@
+import processing.serial.*;
+Serial port;
+
+void setup(){
+size (800,600);
+//port=new Serial (this, "COM", 9600);
+}
+
+void serialEvent (Serial port){
+  data= port.readStringUntil (\n);
+  if (data!=null){
+    dataf= trim (data)    //trim --> es algo asi como un CLEAR y el (data) es necesario para limpiar datos
+    data="";
+    port.clear();
+
+
+void draw (){
+  background (255,100,100);
+  fill (0,0,255);
+  rect (375,150,50,100);
+  fill (0,255,0);
+  ellipse (400,200,20,20);
+  }
